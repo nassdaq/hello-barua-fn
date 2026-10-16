@@ -1,0 +1,12 @@
+[package]
+name = "hello-barua-echo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+barua-fn = { git = "https://github.com/nassdaq/barua-fn-rs" }
+serde_json = "1"
+
+[profile.release]
+opt-level = "s"
+lto = true
